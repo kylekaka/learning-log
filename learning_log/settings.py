@@ -14,7 +14,8 @@ SECRET_KEY = '3gjyd-&hih&ngbfvfq(7@$hi6t4d=+1(ff6nz!hjr8)e52w&nw'
 # 安全警告：不要在线上环境中启用调试！
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost',
+                '192.168.43.235',]
 
 
 # Application definition
