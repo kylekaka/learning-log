@@ -1,8 +1,22 @@
 import datetime
+import unittest
 
+from django.test import Client
 from django.test import TestCase
 
 from .models import Topic, Entry
+
+class SimpleTest(unittest.TestCase):
+    def test_index(self):
+        client = Client()
+        response = client.get('/')
+        self.assertEqual(response.status_code, 200)
+
+    def test_login(self):
+        client = Client()
+        response = client.get('/users/login')
+        self.assertEqual(response.status_code, 200)
+
 
 # 单元测试代码
 class TopicMethodTests(TestCase):
