@@ -39,3 +39,6 @@ $ python3 manage.py runserver
 
 ## 3.利用heroku部署到线上
 请参考《利用Heroku部署Django web应用》，链接：https://my.oschina.net/u/3247573/blog/832351
+
+## 4.使用Jenkins进行持续集成
+TODO
