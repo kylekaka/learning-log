@@ -70,7 +70,7 @@ def test_case_edit_entry():
                  entry_name + "条目编辑后")
 
 def test_case_home_page():
-    browser.find_element_by_link_text("主页").click()
+    browser.find_element_by_link_text("学习笔记").click()
     browser.find_element_by_link_text("注册新账号").click()
     assert_equal(browser.find_element_by_name("submit").text, '注册')
 
